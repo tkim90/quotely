@@ -1,10 +1,11 @@
-<h1>All Quotes</h1>
+<div class="mt-10 flex justify-center">
+  <h1 class="font-bold text-3xl">All Quotes</h1>
+</div>
+
 <h2>
   <ul>
     <% @quotes.each do |quote| %>
-      <li>
-        <%= link_to quote.body, quote %>
-      </li>
+      <%= render partial: "quoteCard", locals: { quote: quote } %>
     <% end %>
   </ul>
 </h2>

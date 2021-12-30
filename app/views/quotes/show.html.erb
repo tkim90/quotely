@@ -2,5 +2,17 @@
 <p><%= @user.username %></p>
 
 <% @quote.comments.each do |comment| %>
-  <p><%= comment.body %></p>
+  <div
+    class="
+      m-auto relative px-6 pt-10 pb-8 shadow-xl ring-1
+      sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10
+      justify-center align-middle
+    ">
+    <div class="py-8 text-base leading-7 space-y-6">
+      <h1 class="text-3xl italic">
+       <%= comment.body %>
+      </h1>
+      <p><%= comment.author %></p>
+    </div>
+  </div>
 <% end %>
