@@ -1,40 +1,44 @@
-<nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-  <%= link_to(root_path) do %>
-    <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <!-- <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg> -->
-      <span class="font-semibold text-xl tracking-tight">Quotely 🪶</span>
+<!-- navbar goes here -->
+<nav class="bg-gray-100">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-between">
+
+      <div class="flex space-x-4">
+        <!-- logo -->
+        <div>
+          <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+            <span class="font-bold text-2xl">Quotely 🪶</span>
+          </a>
+        </div>
+
+        <!-- primary nav -->
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">My Quotes</a>
+          <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Explore</a>
+        </div>
+      </div>
+
+      <!-- secondary nav -->
+      <div class="hidden md:flex items-center space-x-1">
+        <a href="" class="py-5 px-3">Login</a>
+        <a href="" class="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300">Signup</a>
+      </div>
+
+      <!-- mobile button goes here -->
+      <div class="md:hidden flex items-center">
+        <button class="mobile-menu-button">
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
     </div>
-  <% end %>
-  <div class="block lg:hidden">
-    <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-    </button>
   </div>
-  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-    <div class="text-sm lg:flex-grow">
-      <%= link_to "Explore", quotes_path, class: "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" %>
-      <%= link_to "My Quotes", users_path, method: :showUserQuotes, class: "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" %>
-      <%= link_to "New Quote", new_quote_path, class: "block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" %>
-    </div>
-    <div>
-      <a href="/users/tae" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">My Account</a>
-    </div>
-    <div>
-      <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign In</a>
-    </div>
-  </div>
 
-  <!-- Mobile menu, show/hide based on menu state. -->
-  <div class="sm:hidden" id="mobile-menu">
-    <div class="px-2 pt-2 pb-3 space-y-1">
-      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
-
-      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
-
-      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-
-      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
-    </div>
+  <!-- mobile menu -->
+  <div class="mobile-menu hidden md:hidden">
+    <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Features</a>
+    <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Pricing</a>
   </div>
 </nav>
