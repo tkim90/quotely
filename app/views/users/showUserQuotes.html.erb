@@ -1,6 +1,7 @@
-<h1 class="text-6xl font-normal leading-normal mt-0 mb-2 text-pink-800"><%= @user.username %>'s Quotes</h1>
-<% @user.quotes.each do |user_quote| %>
-  <i><%= user_quote.body %></i>
-  <b><%= user_quote.author %></b>
-  <br>
+<div class="mt-10 flex justify-center">
+  <h1 class="font-bold text-3xl"><%= @user.username  %>'s Quotes</h1>
+
+</div>
+<% @user.quotes.each do |quote| %>
+  <%= render partial: "quotes/quoteCard", locals: { quote: quote } %>
 <% end %>

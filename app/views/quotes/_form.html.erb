@@ -1,22 +1,37 @@
-<%= form_with model: quote do |form| %>
-  <div>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %><br>
-    <% quote.errors.full_messages_for(:body).each do |message| %>
-      <div><%= message %></div>
-    <% end %>
-  </div>
+<div class="flex justify-center">
+  <%#= if quote.errors.any? %>
+  <!--    <div>-->
+  <!--      <h2>-->
+  <!--        <%# pluralize(post.errors.count, "error") %> prevented this from saving:-->
+  <!--      </h2>-->
 
-  <div>
-    <%= form.label :author %><br>
-    <%= form.text_field :author %>
-    <% quote.errors.full_messages_for(:author).each do |message| %>
-      <div><%= message %></div>
-    <% end %>
-  </div>
+  <!--      <ul>-->
+  <%# quote.errors.each do |e| %>
+  <!--            <li><%#= error.full_message %></li>-->
+  <%# end %>
+  <!--      </ul>-->
+  <!--    </div>-->
+  <%# end %>
 
+  <%= form_with model: quote, builder: TailwindBuilder, class: "mt-6" do |form| %>
+    <div class="mb-6">
+      <%= form.label :body %>
+      <%= form.text_area :body %>
+      <% quote.errors.full_messages_for(:body).each do |message| %>
+        <div class="mt-3 color-red font-bold"><%= message %></div>
+      <% end %>
+    </div>
 
-  <div class="btn btn-blue">
-    <%= form.submit %>
-  </div>
-<% end %>
+    <div class="mb-6">
+      <%= form.label :author %><br>
+      <%= form.text_field :author %>
+      <% quote.errors.full_messages_for(:author).each do |message| %>
+        <div><%= message %></div>
+      <% end %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit class: "font-semibold p-2 rounded" %>
+    </div>
+  <% end %>
+</div>

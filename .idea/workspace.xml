@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35f51937-4b7a-444a-873b-eca935d9a748" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/quotes/_quoteCard.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/builder/tailwind_builder.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/main/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/quotes/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/quotes/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/quotes/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/quotes/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/quotes/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/quotes/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/quotes/_quoteCard.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/quotes/_quoteCard.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/quotes/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/quotes/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/showUserQuotes.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/showUserQuotes.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="ERB File" />
+        <option value="Ruby File" />
+        <option value="Ruby Class" />
       </list>
     </option>
   </component>
@@ -60,6 +63,8 @@
       <recent name="$PROJECT_DIR$/app/controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/builder" />
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/controllers" />
     </key>
   </component>

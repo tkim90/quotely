@@ -6,9 +6,11 @@
       justify-center align-middle
     ">
   <div class="py-8 text-base leading-7 space-y-6">
-    <h1 class="text-3xl italic">
+    <h1 class="text-2xl italic">
       <%= quote.body %>
     </h1>
-    <p><%= quote.author %></p>
+    <div class="font-medium">
+      - <%= quote.author %>
+    </div>
   </div>
 </div>
