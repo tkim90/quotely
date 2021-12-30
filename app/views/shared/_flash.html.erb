@@ -1,0 +1,11 @@
+<% if session[:flashes][:notice] %>
+  <div class="alert alert-blue" role="alert">
+    <%= flash[:notice].inspect %>
+  </div>
+<% end %>
+
+<% if session[:flashes][:alert] %>
+  <div class="alert alert-red" role="alert">
+    <%= flash[:alert] %>
+  </div>
+<% end %>

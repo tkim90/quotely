@@ -1,0 +1,12 @@
+<h1>All Quotes</h1>
+<h2>
+  <ul>
+    <% @quotes.each do |quote| %>
+      <li>
+        <%= link_to quote.body, quote %>
+      </li>
+    <% end %>
+  </ul>
+</h2>
+
+<%= link_to(root_path) %>
